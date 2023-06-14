@@ -49,7 +49,7 @@ export default {
         </p>
 
         <p class="technologies-list mt-1 mb-2 text-success">
-            <span v-if="project.technologies">
+            <span v-if="project.technologies.length > 0">
                 <span> {{ techName() }} </span>
             </span>
             <span v-else>
