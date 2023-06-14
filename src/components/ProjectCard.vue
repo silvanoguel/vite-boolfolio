@@ -22,6 +22,15 @@ export default {
                 return this.project.content
             }
         },
+    },
+    methods:{
+        techName() {
+            let names = [];
+            this.project.technologies.forEach(technology => {
+                names.push(technology.name);
+            });
+            return names.join(',');
+        }
     }
 
 }
@@ -40,8 +49,8 @@ export default {
         </p>
 
         <p class="technologies-list mt-1 mb-2 text-success">
-            <span v-if="project.technologies.length > 0">
-                <span v-for="technology in project.technologies" class="technology">{{ technology.name}},</span>
+            <span v-if="project.technologies">
+                <span> {{ techName() }} </span>
             </span>
             <span v-else>
                 <span>No technologies</span>
