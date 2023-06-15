@@ -55,7 +55,8 @@ export default {
             <span v-else>
                 <span>No technologies</span>
             </span>
-        </p>
+        </p>            
+        <router-link :to='{ name: "single-project", params: { slug:project.slug } }' class="btn btn-primary">Details</router-link>
     </div>
   </div>
 
