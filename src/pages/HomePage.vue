@@ -5,7 +5,11 @@ export default {
 </script>
 
 <template>
-    <h2>Home page</h2>
+    
+    <div class="container">
+        <h2>Home page</h2>
+    </div>
+    
 </template>
 
 <style lang="scss" scoped></style>

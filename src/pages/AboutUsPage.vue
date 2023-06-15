@@ -5,7 +5,10 @@ export default {
 </script>
 
 <template>
-    <h2>About us</h2>
+    <div class="container">
+        <h2>About us</h2>
+    </div>
+    
 </template>
 
 <style lang="scss" scoped></style>

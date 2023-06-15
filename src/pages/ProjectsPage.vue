@@ -9,13 +9,13 @@ export default {
     name: "ProjectsPage",
   data() {
     return {
-      baseUrl: "http://127.0.0.1:8000",
+    //   baseUrl: "http://127.0.0.1:8000",
       projects: [],
       currentPage: 1,
       lastPage: null,
-      totalPosts: 0,
+      totalProjects: 0,
       loading: false,
-      store,
+      store
     }
   }, 
   components: { 
@@ -59,7 +59,7 @@ export default {
           <ProjectCard :project="project" />
         </div>
       </div>
-      <Pagination :currentPage="currentPage" :lastPage="lastPage" @changePage="getPosts" />
+      <Pagination :currentPage="currentPage" :lastPage="lastPage" @changePage="getProjects" />
     </section>
     <section v-else>
       <p>Loading...</p>

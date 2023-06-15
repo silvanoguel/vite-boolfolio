@@ -1,4 +1,5 @@
 <script>
+
 export default {
     name: 'Pagination',
     props: {
@@ -7,6 +8,7 @@ export default {
     },
     emits: ['changePage']
 }
+
 </script>
 
 <template>

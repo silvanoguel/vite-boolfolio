@@ -9,6 +9,10 @@ export default {
                     routeName: "home"
                 },
                 {
+                    label: "Projects",
+                    routeName: "projects"
+                },
+                {
                     label: "About us",
                     routeName: "about"
                 },
