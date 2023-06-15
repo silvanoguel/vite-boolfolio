@@ -74,4 +74,10 @@ export default {
 
 <style lang="scss">
 @use "./styles/general.scss" as *;
+
+* {
+  background-color: lightgray;
+}
+
+
 </style>

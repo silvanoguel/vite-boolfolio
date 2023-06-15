@@ -62,4 +62,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+.card {
+    background-color: beige;
+    border: 2px solid black;
+}
+
 </style>
